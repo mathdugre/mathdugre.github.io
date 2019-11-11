@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@mathdugre - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/icon/academicons-1.8.6/css/academicons.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html", function () {
+                $('#home').addClass("selected");
+            });
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="content">
+        <img src="photo.jpg" class="photo">
+
+
+        <div class="font1 short-bio">
+            <div>
+                <div style="font-size: 80px; font-weight: bold;">Hello,</div>
+                <div style="font-size: 46px;">a bit about me:</div>
+            </div>
+
+            <div class=circle-box>
+                <div class="circle">
+                    <a href="resume.html" class="circle c1">
+                        MY RESUME
+                    </a>
+                </div>
+                <div class="circle">
+                    <a href="projects.html" class="circle c2">
+                        MY PROJECTS
+                    </a>
+                </div>
+                <div class="circle">
+                    <a href="https://medium.com/@mathdugre" target="_blank" class="circle c3">
+                        MY BLOG
+                    </a>
+                </div>
+            </div>
+
+            <div class="font2">
+                <p>
+                    I'm in the last year of my Honours in Computer Applications with Mathematics
+                    and Statistics at Concordia University. My research interest are on performance
+                    of big data engines and their strategies. In my spare time I like to cook, do
+                    competitive programming, and read about python, mathematics or quantum computing.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        $(function () { $("#header #home").addClass("selected"); });
+    </script>
+</body>
+
+</html>
