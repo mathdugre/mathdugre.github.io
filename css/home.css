@@ -1,0 +1,79 @@
+#content {
+  justify-self: center;
+  margin: 2em 1.5em 1.5em 1em;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 1.2em;
+  grid-template-areas:
+    "photo greetings"
+    "photo circle-box"
+    "photo description";
+}
+
+#photo {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  grid-area: photo;
+}
+
+#circle-box {
+  grid-area: circle-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0.5em;
+}
+
+#description {
+  grid-area: description;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #edeff2;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.4s ease 0s;
+}
+
+a.c1 {
+  background-color: #0c51a0;
+}
+a.c1:hover {
+  background-color: #062549;
+}
+
+a.c2 {
+  background-color: #2e91ed;
+}
+a.c2:hover {
+  background-color: #15426c;
+}
+
+a.c3 {
+  background-color: #34acf7;
+}
+a.c3:hover {
+  background-color: #184f71;
+}
+
+#description p {
+  text-justify: auto;
+}
+
+/* MOBILE */
+@media (max-width: 750px) {
+  #content {
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 30% 60%;
+    grid-template-areas:
+      "photo greetings"
+      "photo circle-box"
+      "description description";
+  }
+}

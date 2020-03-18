@@ -1,0 +1,80 @@
+footer {
+  background-color: #292f36;
+}
+
+footer a {
+  color: #edeff2;
+}
+
+footer > div {
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer > div > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: flex-start;
+  color: #edeff2;
+}
+
+footer > div > div > div {
+  margin-left: 20px;
+  width: 75%;
+}
+
+footer > div > div > div > div {
+  margin-top: 5px;
+}
+
+footer .icon {
+  height: 60px;
+  width: 60px;
+}
+
+footer .follow-bar > ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+footer .follow-bar > ul * {
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  color: #edeff2;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background-color 0.4s ease 0s;
+}
+
+footer .follow-bar > ul a *:hover {
+  background: #da3925;
+}
+
+footer .email,
+footer .email:visited {
+  text-decoration: none;
+}
+
+footer .email:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  footer > div {
+    height: 175px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

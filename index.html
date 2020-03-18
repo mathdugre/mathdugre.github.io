@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>@mathdugre - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/icon/academicons-1.8.6/css/academicons.css" />
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(function () {
-            $("#header").load("header.html", function () {
-                $('#home').addClass("selected");
-            });
-            $("#footer").load("footer.html");
-        });
-    </script>
-</head>
+      function resizeContent() {
+        $(".circle").css({ height: $(".circle").css("width") });
+        $("#photo").css({ height: $("#photo").css("width") });
+        if (window.screen.width > 520 && window.screen.width <= 750) {
+          $("#description").css({
+            width:
+              $("#photo").width() +
+              parseFloat(
+                $("#content")
+                  .css("grid-column-gap")
+                  .split(" ")[0]
+              ) +
+              $("#circle-box").width()
+          });
+          console.log($("#description").css("width"));
+        }
+      }
+      window.addEventListener("resize", resizeContent, false);
 
-<body>
+      $(function() {
+        $("#header").load("header.html", function() {
+          $("#home").addClass("selected");
+        });
+        $("#footer").load("footer.html");
+        resizeContent();
+      });
+    </script>
+  </head>
+
+  <body>
     <div id="header"></div>
 
-    <div class="content">
-        <img src="photo.png" class="photo">
+    <div id="content">
+      <img id="photo" src="photo.png" alt="profile photo" />
 
+      <div id="greetings" class="font1">
+        <div style="font-size: 4em; font-weight: bold;">Hello,</div>
+        <div style="font-size: 2.5em;">a bit about me:</div>
+      </div>
 
-        <div class="font1 short-bio">
-            <div>
-                <div style="font-size: 80px; font-weight: bold;">Hello,</div>
-                <div style="font-size: 46px;">a bit about me:</div>
-            </div>
-
-            <div class=circle-box>
-                <div class="circle">
-                    <a href="resume.html" class="circle c1">
-                        MY RESUME
-                    </a>
-                </div>
-                <div class="circle">
-                    <a href="projects.html" class="circle c2">
-                        MY PROJECTS
-                    </a>
-                </div>
-                <div class="circle">
-                    <a href="https://medium.com/@mathdugre" target="_blank" class="circle c3">
-                        MY BLOG
-                    </a>
-                </div>
-            </div>
-
-            <div class="font2">
-                <p>
-                    I'm in the last year of my Honours in Computer Applications with Mathematics
-                    and Statistics at Concordia University. My research interest are on performance
-                    of big data engines and their strategies. In my spare time I like to cook, do
-                    competitive programming, and read about python, mathematics or quantum computing.
-                </p>
-            </div>
-
+      <div id="circle-box" class="font1">
+        <div class="circle">
+          <a href="resume.html" class="circle c1">
+            RESUME
+          </a>
         </div>
+        <div class="circle">
+          <a href="projects.html" class="circle c2">
+            PROJECTS
+          </a>
+        </div>
+        <div class="circle">
+          <a
+            href="https://medium.com/@mathdugre"
+            target="_blank"
+            class="circle c3"
+          >
+            BLOG
+          </a>
+        </div>
+      </div>
+
+      <div id="description" class="font2">
+        <p>
+          I'm in the last year of my Honours in Computer Applications with Major
+          Mathematics and Statistics at Concordia University. My research
+          interests are in performance of big data pipelines. In my free time I
+          like to do competitive programming, read about Python and Devops, and
+          make delicious food.
+        </p>
+      </div>
     </div>
 
     <div id="footer"></div>
 
     <script>
-        $(function () { $("#header #home").addClass("selected"); });
+      $(function() {
+        $("#header #home").addClass("selected");
+      });
     </script>
-</body>
-
+  </body>
 </html>
