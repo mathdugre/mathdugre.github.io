@@ -1,13 +1,13 @@
 body {
   background: #edeff2;
   display: grid;
-  grid-template-areas: "header" "body" "footer";
+  grid-template-areas: "header" "content" "footer";
 }
 header {
   grid-area: header;
 }
-body {
-  grid-area: body;
+#content {
+  grid-area: content;
 }
 footer {
   grid-area: footer;
