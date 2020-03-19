@@ -12,6 +12,14 @@
       function resizeContent() {
         $(".circle").css({ height: $(".circle").css("width") });
         $("#photo").css({ height: $("#photo").css("width") });
+        $("#header").css(
+          { width: $("#content").css("width") } +
+            parseFloat(
+              $("#content")
+                .css("grid-column-gap")
+                .split(" ")[0]
+            )
+        );
         if (window.screen.width > 520 && window.screen.width <= 750) {
           $("#description").css({
             width:

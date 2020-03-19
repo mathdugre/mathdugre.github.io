@@ -1,0 +1,36 @@
+#content {
+  justify-self: center;
+  margin: 2em 1.5em 1.5em 1em;
+  display: grid;
+  grid-row-gap: 1em;
+  grid-template-areas: "title" "cv";
+}
+
+#page-header {
+  grid-area: title;
+  width: 80%;
+  justify-self: center;
+}
+
+#title {
+  color: #2e91ed;
+}
+
+#page-header a {
+  color: #3c4148;
+}
+
+#page-header a:hover {
+  color: #2e91ed;
+}
+
+#cv {
+  grid-area: cv;
+}
+
+/* MOBILE */
+@media (max-width: 1000px) {
+  #cv > embed {
+    height: 800px;
+  }
+}

@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>@mathdugre - Projects</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
     <link rel="stylesheet" href="/icon/academicons-1.8.6/css/academicons.css" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(function () {
-            $("#header").load("header.html", function () {
-                $('#projects').addClass("selected");
-            });
-            $("#footer").load("footer.html");
+      $(function() {
+        $("#header").load("header.html", function() {
+          $("#projects").addClass("selected");
         });
+        $("#footer").load("footer.html");
+      });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header"></div>
 
-    <div class="content">
-        <p style="font-size: 72px; font-weight: bold; text-align: center;">Under construction...</p>
+    <div id="content">
+      <p style="font-size: 72px; font-weight: bold; text-align: center;">
+        Under construction...
+      </p>
     </div>
 
     <div id="footer"></div>
-</body>
-
+  </body>
 </html>
