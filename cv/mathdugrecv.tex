@@ -1,0 +1,290 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{mathdugrecv.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Mathieu}{Dugré}{Software Developer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\includegraphics[width=\textwidth]{./photo-rounded_rectangle.jpg}
+\section{Contact}
+6590A rue Louis-Dupire
+Montreal, Quebec
+H1M 1A6, Canada
+~
+\href{mailto:mathdugre@pm.me}{mathdugre@pm.me~{\color{red} \faEnvelope}}
+% \href{https://mathdugre.me}{mathdugre.me~{\color{lightblue} \faGlobe}}
+\href{https://github.com/mathdugre}{mathdugre~{\color{purple} \faGithub}}
+\href{https://twitter.com/mathdugre}{{\color{blue} \faTwitter}} \href{https://www.linkedin.com/in/mathdugre}{{\color{green} \faLinkedin}} \href{https://scholar.google.com/citations?user=ztw6g7kAAAAJ&hl=en}{{\color{googred} \aiGoogleScholar}}
+\section{Languages}
+French native
+English bilingual
+\section{Programming}
+Python, Dask, Bash {\color{red} $\varheartsuit$}
+Spark, Docker, Linux
+\section{Soft skills}
+leadership, management, communication, problem~solving
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+    %------------------------------------------------
+
+    \entry
+    {09/17--05/20}
+    {B.Comp.Sci. {\normalfont Honours Computer Aplications}}
+    {Concordia University, Montreal, QC}
+    {Major in Mathematics and Statistics.\\
+    • Honours work supervised by Dr. Tristan Glatard on a project aiming at
+    exploring the possible strategies to minimize the data transfer
+    time of containerized application for High Performance Computing.}
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Work experience}
+
+\begin{entrylist}
+
+    %------------------------------------------------
+
+    \entry
+    {05/19--now}
+    {Concordia University}
+    {Montreal, QC}
+    {\job{Research Assistant} \\
+    • Conducted benchmark experiments and wrote a paper on the performance of two
+    Big Data engines: Dask and Apache Spark.\\
+    • Worked on the development of tools and procedures to facilitate the sharing
+    of restricted data from PERFORM Center onto the Canadian Open Neuroscience
+    Platform (CONP).\\
+    • Exploring different strategies to pinpoint bottleneck in application
+    executed on High Performance Computing environment.}
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+\subsection{Teaching Experience}
+
+\begin{entrylist}
+
+    %------------------------------------------------
+
+    \entry
+    {2019}
+    {MTL - Brainhack Global 2019}
+    {Montreal, QC}
+    {\job{Workshop demonstrator} \\
+    Taught a workshop on the Git and GitHub workflow in the scope of research
+    in neuroimaging.}
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	MEMEBERSHIP AND EXTRACURRICULARS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Extracurriculars}
+
+\begin{entrylist}
+
+    %------------------------------------------------
+    
+    \entry
+    {09/19--now}
+    {Seminary on Undergraduate Mathematics in Montreal}
+    {Montreal, QC}
+    {\job{VP Communication} \\
+    • Developed the website for the event.\\
+    • Designed the process for inscription and submission for talk and poster.\\
+    • Wrote funding requests.}
+
+    %------------------------------------------------
+    
+    \entry
+    {05/19--05/20}
+    {Concordia Software Engineering And Computer Science Society}
+    {Montreal, QC}
+    {\job{Co-VP Competitions} \\
+    • Formed teams for inter-university competitions\\
+    • Organized and created competition tryouts}
+
+    %------------------------------------------------
+
+    \entry
+    {08/18--05/19}
+    {Data Innovation Playground}
+    {Montreal, QC}
+    {\job{Director of projects} \\
+    • Mentored students on building data science projects on a weekly basis.\\
+    • Recruited mentors, speakers, and sponsors for The Innovative Society.\\
+    • Built the website for our rebranding.}
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMPETITIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\clearpage
+\input{midamble.tex}
+\section{Competitions}
+
+\begin{entrylist}
+
+    %------------------------------------------------
+
+    \entry
+    {11/19}
+    {International Collegiate Programming Contest (ICPC) - NENA Regional}
+    {Rochester, NY}
+    {10th place}
+
+    %------------------------------------------------
+
+    \entry
+    {09/18}
+    {IEEExtreme 12.0}
+    {Montreal, QC}
+    {10th place (Canada)}
+
+    %------------------------------------------------
+
+    \entry
+    {04/18}
+    {Google Tech Challenge}
+    {Montreal, QC}
+    {1st place}
+
+    %------------------------------------------------
+
+    \entry
+    {09/17}
+    {IEEExtreme 11.0}
+    {Montreal, QC}
+    {15th place (Canada)}
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Awards}
+
+\begin{entrylist}
+    \vspace{-7pt}
+    %------------------------------------------------
+
+    \entry
+    {05/19}
+    {Supplements of the NSERC Undergraduate Student Research Awards}
+    {Concordia University}
+    {}
+    \vspace{-7pt}
+    % $2000
+    % Supplement for NSERC USRA
+
+    %------------------------------------------------
+
+    \entry
+    {08/19}
+    {NSERC Undergraduate Student Research Awards (USRA) }
+    {Concordia Univeristy}
+    {}
+    \vspace{-7pt}
+    % $5,625.00
+    % Summer research project
+
+    %------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\textbf{Professional:} Big~Data, Distributed~System, Parallel~Computing,
+Data~Science, DevOps,\\
+High~Performance~Computing, Reproducibility, Algorithms~Design.
+\\\\\textbf{Personal:} Cooking, Reading, Competitive~Programming, Martial~Arts.
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+% \section{reviewed for}
+% \begin{enumerate}
+
+% \end{enumerate}
+
+% \clearpage
+
+\section{Publications}
+% \printbibsection{manual}{Pre-prints} % Print all articles from the bibliography
+
+\printbibsection{article}{Articles in peer-reviewed journals} % Print all articles from the bibliography
+
+% \printbibsection{inproceedings}{Proceedings in international peer-reviewed conferences} % Print all inproceedings entries from the bibliography
+
+% \printbibsection{inbook}{Book chapters} % Print all inbook entires
+
+% \printbibsection{booklet}{Invited talks \& Workshops} % Print all booklet entries from the bibliography
+
+% \printbibsection{proceedings}{Posters at international conferences} % Print all proceedings entries from the bibliography
+
+% \printbibsection{report}{Works in progress} % Print all research reports from the bibliography
+
+\subsubsection{}{Published code}
+For an up-to-date list of published code projects, please visit my GitHub profile at
+\href{https://github.com/mathdugre}{https://github.com/mathdugre}.
+% \printbibsection{misc}{published code} % Print all miscellaneous entries from the bibliography
+
+%----------------------------------------------------------------------------------------
+\end{document}
