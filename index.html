@@ -14,30 +14,22 @@
         $("#photo").css({ height: $("#photo").css("width") });
         $("#header").css(
           { width: $("#content").css("width") } +
-            parseFloat(
-              $("#content")
-                .css("grid-column-gap")
-                .split(" ")[0]
-            )
+            parseFloat($("#content").css("grid-column-gap").split(" ")[0])
         );
         if (window.screen.width > 520 && window.screen.width <= 750) {
           $("#description").css({
             width:
               $("#photo").width() +
-              parseFloat(
-                $("#content")
-                  .css("grid-column-gap")
-                  .split(" ")[0]
-              ) +
-              $("#circle-box").width()
+              parseFloat($("#content").css("grid-column-gap").split(" ")[0]) +
+              $("#circle-box").width(),
           });
           console.log($("#description").css("width"));
         }
       }
       window.addEventListener("resize", resizeContent, false);
 
-      $(function() {
-        $("#header").load("header.html", function() {
+      $(function () {
+        $("#header").load("header.html", function () {
           $("#home").addClass("selected");
         });
         $("#footer").load("footer.html");
@@ -53,15 +45,13 @@
       <img id="photo" src="photo.png" alt="profile photo" />
 
       <div id="greetings" class="font1">
-        <div style="font-size: 4em; font-weight: bold;">Hello,</div>
-        <div style="font-size: 2.5em;">a bit about me:</div>
+        <div style="font-size: 4em; font-weight: bold">Hello,</div>
+        <div style="font-size: 2.5em">a bit about me:</div>
       </div>
 
       <div id="circle-box" class="font1">
         <div class="circle">
-          <a href="resume.html" class="circle c1">
-            RESUME
-          </a>
+          <a href="resume.html" class="circle c1"> RESUME </a>
         </div>
         <div class="circle">
           <a
@@ -85,11 +75,10 @@
 
       <div id="description" class="font2">
         <p>
-          I'm in the last year of my Honours in Computer Applications with Major
-          Mathematics and Statistics at Concordia University. My research
-          interests are in performance of big data pipelines. In my free time I
-          like to do competitive programming, read about Python and Devops, and
-          make delicious food.
+          I'm master student in computer science at Concordia University. My
+          research interests are in performance and data locality of big data
+          pipelines in HPC environment. In my
+          free time I like to run, bake, and cook delicious food.
         </p>
       </div>
     </div>
@@ -97,7 +86,7 @@
     <div id="footer"></div>
 
     <script>
-      $(function() {
+      $(function () {
         $("#header #home").addClass("selected");
       });
     </script>
