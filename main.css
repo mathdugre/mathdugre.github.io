@@ -38,7 +38,7 @@ a:hover {
     text-justify: inter-word;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 900px) {
     #content {
         top: 0;
         transform: translate(-50%, 0);
