@@ -4,9 +4,14 @@ html {
     font-weight: 300;
 }
 
+body {
+    background: #FFFBE6;
+    color: #292F37;
+}
+
 a {
     text-decoration: none;
-    color: #1565c0;
+    color: #385D8D;
 }
 
 h1 {
@@ -14,7 +19,7 @@ h1 {
 }
 
 a:hover {
-    color: #217ee7;
+    color: #FFBB00;
 }
 
 #content {
@@ -27,6 +32,10 @@ a:hover {
     max-width: 600px;
     padding: 32px;
     line-height: 1.6em;
+}
+#content p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media screen and (max-height: 600px) {
@@ -57,9 +66,9 @@ a:hover {
 }
 
 .icons a {
-    color: black;
+    color: #292F37;
 }
 
 .icons a:hover {
-    color: #1565c0;
+    color: #385D8D;
 }
